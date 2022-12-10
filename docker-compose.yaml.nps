@@ -7,5 +7,4 @@ services:
         network_mode: "host"
         volumes:
             - "./conf:/conf"
-        command: "-config=/conf/nps.conf"
         restart: 'always'
