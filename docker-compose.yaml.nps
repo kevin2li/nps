@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+    nps:
+        container_name: nps
+        image: ffdfgdfg/nps
+        hostname: nps-host
+        network_mode: "host"
+        volumes:
+            - "./conf:/conf"
+        command: "-config=/conf/nps.conf"
+        restart: 'always'

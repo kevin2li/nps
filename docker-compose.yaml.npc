@@ -8,4 +8,4 @@ services:
         volumes:
             - "./conf:/conf"
         command: "-config=/conf/npc.conf"
-        restart: 'unless-stopped'
+        restart: 'always'
