@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+    npc:
+        container_name: npc
+        image: ffdfgdfg/npc
+        hostname: npc-host
+        network_mode: "host"
+        volumes:
+            - "./conf:/conf"
+        command: "-config=/conf/npc.conf"
+        restart: 'always'
